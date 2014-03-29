@@ -1,8 +1,15 @@
 # Android Development Environment
 
 This vagrant box is a very spare 32bit Debian Linux running the
-minimalist XFCE window manager. The base-box contains nothing more
-than that, so the Vagrantfile installs:
+minimalist XFCE window manager. On boot XFCE is started automatically
+and the 'vagrant' user is automatically logged in.
+
+The box is set up as described in the vagrant docs for a typical
+vagrant box, so there is a 'vagrant' user with password 'vagrant',
+with password-less sudo. The root user password is also 'vagrant'.  
+
+The base-box contains nothing more than that, so the Vagrantfile 
+installs:
 
 * A better terminal editor (lxterminal)
 * A bunch of handy tools such as git, svn and curl
@@ -17,8 +24,9 @@ tweaking the install-tools.sh file.
 ## IMPORTANT NOTE:
 
 To do Android development from VirtualBox you _must_ install the 
-virtualbox extensions (this is _not_ the same as guest additions!)
-to enable USB2 support.
+virtualbox extensions in order that usb2 support is enabled 
+(virtualbox extensions is _not_ the same as guest additions,
+which are already installed in the Debian guest!).
 
 To install the virtualbox extensions, download the .vbox_extpack
 file from the [virtualbox downloads page](https://www.virtualbox.org/wiki/Downloads), then start up the "virtualbox manager", go to the File menu,

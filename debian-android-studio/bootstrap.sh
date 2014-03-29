@@ -15,5 +15,5 @@ chmod ug+x /home/vagrant/install-tools.sh
 su -c "/home/vagrant/install-tools.sh" vagrant
 
 # set up udev rules for known android device manufacturers
-cat 51-android.rules > /etc/udev/rules.d/51-android.rules
+cat /vagrant/51-android.rules > /etc/udev/rules.d/51-android.rules
 chmod a+r /etc/udev/rules.d/51-android.rules
