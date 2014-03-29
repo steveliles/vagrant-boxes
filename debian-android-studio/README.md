@@ -20,6 +20,15 @@ To do Android development from VirtualBox you _must_ install the
 virtualbox extensions (this is _not_ the same as guest additions!)
 to enable USB2 support.
 
+To install the virtualbox extensions, download the .vbox_extpack
+file from the [virtualbox downloads page](https://www.virtualbox.org/wiki/Downloads), then start up the "virtualbox manager", go to the File menu,
+(or the VirtualBox menu, if you're on Mac OS), and open Preferences.
+
+Once in Preferences, go to "extensions", click the little blue icon
+with the yellow down arrow, pick the .vbox_extpack file from whereever
+you downloaded it to, and you're good to go.
+
+
 ## UDEV RULES
 
 Android development on Linux requires udev rules configurations
