@@ -45,3 +45,8 @@ GenericName=" >> /home/vagrant/Desktop/Android-Studio.Desktop
 wget http://dl.google.com/android/$ANDROID_SDK_FILE
 tar -zxf $ANDROID_SDK_FILE
 rm $ANDROID_SDK_FILE
+
+# install android sdk extras to get google libs
+ANDROID=/home/vagrant/dev/tools/android-sdk-linux/tools/android
+echo y | $ANDROID update sdk --no-ui --filter extra
+

@@ -12,6 +12,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--memory", "1536"]
   end
 
+  config.vm.synced_folder "../../projects", "/home/vagrant/projects"
+
   config.vm.provision :shell, :path => "bootstrap.sh"
 
 end
